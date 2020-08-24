@@ -12,12 +12,12 @@ pipeline {
     }
     stage('Docker Build') {
       steps {
-        Docker build . --tag jenkins-Dashboard
+        docker build . --tag jenkins-Dashboard
       }
     }
     stage('Docker Run') {
       steps {
-        Docker run -d jenkins-Dashboard --name Jenkins-dashboard
+        docker run -d jenkins-Dashboard --name Jenkins-dashboard
       }
     }
   }
