@@ -11,3 +11,4 @@ RUN nvm install node && nvm run node --version
 RUN npm install -g dashing-js
 RUN npm install jenkins-api && npm install cron && npm install moment && npm install request $$ npm install memory-cache
 RUN dashing-js install https://github.com/kj187/dashing-jenkins_job/archive/master.zip && mkdir config && mv widgets/jenkins_job/config.jenkins_job.sample.js config.jenkins_job.js
+# test PR changelog
